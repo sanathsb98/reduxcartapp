@@ -1,0 +1,32 @@
+.product-card{
+    width: 250px;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+  
+}
+.product-title{
+    font-size: 24px;
+    font-weight: 500;
+}
+.add-to-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    background-color: rgb(255 249 5);
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.product-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-price{
+    font-size: 21px;
+    font-weight: 700;
+    margin-top: 12px;
+}
