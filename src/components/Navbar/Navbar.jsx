@@ -21,10 +21,10 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       
-        <div onClick={()=>{navigate('/home')}} className='loggedin-status'><PermIdentityIcon/> <div className='user-name'>{username}</div></div>
+        <div onClick={()=>{navigate('/')}} className='loggedin-status'><PermIdentityIcon/> <div className='user-name'>{username}</div></div>
         <input onChange={(data)=>dispatch(getSearchItem({searchContent : data.target.value}))} placeholder='Search' className='search-bar'/>
         <div onClick={()=>{navigate('/cart')}} className='shopping-cart'><ShoppingCartIcon/>({selector})</div>
-        <div onClick={()=>{navigate('/')}} className='logout-btn'><LogoutIcon/></div>
+        {/* <div onClick={()=>{navigate('/')}} className='logout-btn'><LogoutIcon/></div> */}
     </div>
   )
 }

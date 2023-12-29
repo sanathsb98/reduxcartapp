@@ -18,6 +18,8 @@ app.post('/register', (req, res) => {
     const email = req.body.email;
     const user_password = req.body.user_password;
 
+   
+
     con.query("INSERT INTO auth (email, user_password) VALUES (?, ?)", [email, user_password],
         (err, result) => {
             if (err) {
